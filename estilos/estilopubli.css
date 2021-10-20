@@ -1,0 +1,35 @@
+
+/*Especificidad 001*/
+ul{
+	font: 15px 'trebuchet MS', sans-serif;
+    padding:0;
+}
+
+/*Especificidad 002*/
+ul li{
+	position: relative;
+    display: block;
+    padding:5px;
+    margin: .5em 0 0 2.5em;
+    background: #ddd;
+    color: black;
+    text-decoration: none; 
+}
+
+/*Especificidad 012*/
+ul li:hover{
+	 background: #eee;
+}
+
+/*Especificidad 003*/
+ul li:before{
+    content: "";
+    background: #fa8072;
+    height: 1em;
+    width: 1em;
+    position: absolute; 
+    left: -1.5em;
+    top: 50%;
+    margin-top: -0.5em;
+    
+}

@@ -1,0 +1,111 @@
+/*Especificidad 001*/
+body {
+	font-family: Tahoma, sans-serif;
+  color: #000000;
+  background-color:#DEB887; 
+	text-align:justify;
+}
+
+/*Especificidad 001*/
+h1 {
+  color: black;
+  font-family: "Calisto MT", serif; 
+  text-transform: uppercase;
+  text-align: center;  
+  font-size: 40px;	
+}
+
+/*Especificidad 001*/
+img {
+  max-width: 100%; 
+  height: auto;
+}
+
+/*Especificidad 001*/
+video{
+  max-width: 100%;
+  height: auto;
+}
+
+/*Especificidad 001*/
+audio{
+  max-width: 100%;
+  height: auto;
+}
+
+/*Especificidad 001*/
+h2{
+ text-transform: uppercase;
+ font-weight: lighter;
+ text-align: center; 
+}
+
+
+/*Especificidad 001*/
+header{
+  display:grid;
+  grid-template-rows: auto auto;
+  grid-template-areas: "title title title title"
+                      "nav nav nav nav";
+  justify-items: center;
+  align-items: center;
+}
+
+/*Especificidad 002*/
+header > p {
+	font-style: italic;
+}
+
+/*Especificidad 002*/
+/*Especificidad 003*/
+/*Especificidad 003*/
+header > p, main > section> p, footer > section> p{
+  background-color: #EAD6B3;
+}
+
+
+/*Especificidad 002*/
+header>h1{
+  grid-area: title;
+}
+
+/*Especificidad 002*/
+header>nav{
+  grid-area:nav;
+  display:grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-areas: "home publis prem form";
+  grid-column-gap: 50px;
+  justify-items: stretch;
+  
+}
+
+/*Especificidad 003*/
+header>nav>a {
+  background-color: #EAD6B3;
+  padding:10px;
+}
+
+/*Especificidad 013*/
+header > nav > a:first-of-type{
+  grid-area: home;
+  
+}
+
+/*Especificidad 013*/
+header > nav > a:nth-child(2){
+  grid-area: publis;
+}
+
+/*Especificidad 013*/
+header > nav > a:nth-child(3){
+  grid-area: prem;
+}
+
+/*Especificidad 013*/
+header > nav > a:last-child{
+  grid-area: form;
+}
+
+
+
